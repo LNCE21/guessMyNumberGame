@@ -29,9 +29,9 @@ header {
   border-bottom: 7px solid #eee;
 }
 
-.nav {
+.instruction {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
