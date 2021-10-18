@@ -14,13 +14,14 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background-color: #222;
-  /* background-color: #60b347; */
+  background-image: -webkit-linear-gradient(top, #339cb9 0%,#3fa8c6 20%,#ff9ab2 100%);
 }
 
 /* LAYOUT */
 header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 35vh;
   border-bottom: 7px solid #eee;
 }
@@ -29,8 +30,9 @@ main {
   height: 65vh;
   color: #eee;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left {
@@ -49,24 +51,56 @@ main {
 h1 {
   font-size: 4rem;
   text-align: center;
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
+}
+
+.number__container{
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .number {
-  background: #eee;
-  color: #333;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.336);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: rgb(41, 38, 38);
   font-size: 6rem;
   width: 15rem;
   padding: 3rem 0rem;
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
 }
 
 .between {
@@ -95,18 +129,22 @@ h1 {
   margin-bottom: 3rem;
 }
 
+
 .btn {
   border: none;
   background-color: #eee;
-  color: #222;
+  color: rgb(41, 38, 38);
   font-size: 2rem;
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+  border-radius: .5rem;
+  transition: all .3s;
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: rgb(41, 38, 38);
+  color: #eee;
 }
 
 .message {
