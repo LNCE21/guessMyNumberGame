@@ -24,6 +24,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 3rem;
   height: 35vh;
   border-bottom: 7px solid #eee;
@@ -68,28 +69,12 @@ main {
   padding-top: 6rem;
 }
 
-/* ELEMENTS STYLE */
-.h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  
-}
-
-.number__container{
-  position: relative;
+.number {
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.number {
   background: rgba(255, 255, 255, 0.247);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
@@ -103,10 +88,6 @@ main {
   text-align: center;
   transform: scale(1);
   animation: pulse 2s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes pulse {
@@ -124,8 +105,12 @@ main {
 }
 
 .guess {
-  background: none;
-  border: 4px solid #eee;
+  background: rgba(255, 255, 255, 0.247);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1rem;
+  border: 1px solid rgba(238, 238, 238, 0.623);
   font-family: inherit;
   color: inherit;
   font-size: 5rem;
@@ -163,3 +148,87 @@ main {
   margin-bottom: 2rem;
 }
 
+/*--------------------------------------------------------------------*/
+
+@media only screen and (max-width: 700px) {
+  
+  html {
+    /*7.5px/16px(default)*100(porcentaje)*/
+    font-size: 46.87%;
+  }
+  
+  header {
+    gap: 3rem;
+    height: 30vh;
+    border-bottom: 7px solid #eee;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  .number {
+    width: 100%;
+    font-size: 4rem;
+    height: 8rem;
+    width: 8.5rem;
+    padding: 0 4rem 0 4.2rem;
+    text-align: center;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    margin-top: .8rem;
+  }
+
+  main {
+    height: 70vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .top-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .message {
+    margin-top: .5rem;
+    height: 3rem;
+    font-size: 2.2rem;
+  }
+  
+  .between {
+    padding: 0 0 .5rem 0;
+    font-size: 1.4rem;
+  }
+  
+  .guess {
+    font-size: 4rem;
+    padding: 2.5rem;
+    max-width: 25rem;
+    display: block;
+  }
+  
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.8rem 2.2rem 1.8rem 2.8rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all .3s;
+  }
+
+  .bottom-score {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .label-score {
+    margin-bottom: 2rem;
+  }
+}
