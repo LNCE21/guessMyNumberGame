@@ -30,6 +30,11 @@ header {
   border-bottom: 7px solid #eee;
 }
 
+h1 {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
 .instruction {
   display: flex;
   flex-direction: column;
@@ -150,7 +155,8 @@ main {
 
 /*--------------------------------------------------------------------*/
 
-@media only screen and (max-width: 700px) {
+/*43.75em = 700px*/
+@media only screen and (max-width: 43.75em) {
   
   html {
     /*7.5px/16px(default)*100(porcentaje)*/
