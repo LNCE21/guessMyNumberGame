@@ -30,50 +30,6 @@ header {
   border-bottom: 7px solid #eee;
 }
 
-h1 {
-  font-size: 4rem;
-  padding-bottom: 3rem;
-}
-
-.instruction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.between {
-  padding: 1rem;
-  font-size: 1.4rem;
-}
-
-main {
-  height: 65vh;
-  color: #eee;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-}
-
-.top-number {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 2rem;
-}
-
-.bottom-score {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  padding-top: 6rem;
-}
-
 .number {
   width: 100vw;
   display: flex;
@@ -107,6 +63,56 @@ main {
 	100% {
 		transform: scale(0.95);
 	}
+}
+
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.top-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.bottom-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding-top: 6rem;
+}
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.between {
+  padding: 1rem;
+  font-size: 1.4rem;
 }
 
 .guess {
@@ -143,34 +149,27 @@ main {
   color: #eee;
 }
 
-.message {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  height: 3rem;
-}
-
 .label-score {
   margin-bottom: 2rem;
 }
 
 /*--------------------------------------------------------------------*/
-
-/*43.75em = 700px*/
-@media only screen and (max-width: 43.75em) {
-  
-  html {
-    /*7.5px/16px(default)*100(porcentaje)*/
-    font-size: 46.87%;
-  }
+/*68.75em = 1100px*/
+@media only screen and (max-width: 68.75em) {
   
   header {
-    gap: 3rem;
-    height: 30vh;
-    border-bottom: 7px solid #eee;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    border-bottom: transparent;
   }
   
   h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
   }
   
   .number {
@@ -182,42 +181,91 @@ main {
     text-align: center;
     transform: scale(1);
     animation: pulse 2s infinite;
+  }
+
+  main {
+    height: 75vh;
+  }
+
+  .message {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .guess {
+    margin-bottom: 1rem;
+  }
+
+  .label-score {
+    margin-bottom: 1rem;
+  }
+}
+
+/*43.75em = 700px*/
+@media only screen and (max-width: 43.75em) {
+  
+  html {
+    /*7.5px/16px(default)*100(porcentaje)*/
+    font-size: 46.87%;
+  }
+  
+  header {
+    gap: 3rem;
+    height: 25vh;
+    border-bottom: transparent;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .number {
+    width: 100%;
+    font-size: 8rem;
+    height: 13rem;
+    width: 13.5rem;
+    padding: .5rem 4rem 0 4.5rem;
+    text-align: center;
+    transform: scale(1);
+    animation: pulse 2s infinite;
     margin-top: -2rem;
   }
 
   main {
-    height: 70vh;
+    height: 75vh;
     color: #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: space-between;
   }
 
   .top-number {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 0;
+    height: 100%;
   }
 
   .message {
-    margin-top: .5rem;
-    height: 3rem;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
+    padding: 4rem 0 1.5rem 0;
   }
   
   .between {
-    padding: 0 0 .5rem 0;
-    font-size: 1.4rem;
+    padding: 2rem;
+    font-size: 1.6rem;
   }
   
   .guess {
     font-size: 4rem;
     padding: 2.5rem;
-    max-width: 25rem;
+    height: 30%;
+    width: 60%;
     display: block;
+    margin-top: -10;
   }
   
   .btn {
@@ -230,11 +278,11 @@ main {
 
   .bottom-score {
     font-size: 1.8rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin: 1.5rem;
+    padding: 1.5rem;
   }
 
   .label-score {
-    margin-bottom: 2rem;
+    padding: 1.5rem;
   }
 }
