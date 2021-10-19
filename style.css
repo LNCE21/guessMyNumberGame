@@ -175,14 +175,14 @@ main {
   
   .number {
     width: 100%;
-    font-size: 4rem;
-    height: 8rem;
-    width: 8.5rem;
-    padding: 0 4rem 0 4.2rem;
+    font-size: 6rem;
+    height: 11rem;
+    width: 11.5rem;
+    padding: 0 4rem 0 4.5rem;
     text-align: center;
     transform: scale(1);
     animation: pulse 2s infinite;
-    margin-top: .8rem;
+    margin-top: -2rem;
   }
 
   main {
