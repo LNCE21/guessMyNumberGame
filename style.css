@@ -159,8 +159,8 @@ h1 {
 }
 
 /*--------------------------------------------------------------------*/
-/*68.75em = 1100px*/
-@media only screen and (max-width: 68.75em) {
+/*75em = 1200px*/
+@media only screen and (max-width: 75em) {
   
   header {
     height: 25vh;

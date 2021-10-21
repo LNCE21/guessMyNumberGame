@@ -2,7 +2,7 @@
 
 
 //Variable with random number between 1 and 20
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 //This variable can also be called "state variable" because is part of the application state (all the data relevant for the application)
 let score = 10;
@@ -40,7 +40,7 @@ document.querySelector(".check").addEventListener("click",
                 document.querySelector(".message").textContent = "GAME OVER!";
                 document.querySelector("body").style.backgroundImage = "-webkit-linear-gradient(top, #ffc719 0%, #bf033b 100%)";
                 document.querySelector(".number").textContent = secretNumber;
-                document.querySelector(".score").textContent = "0";
+                document.querySelector(".score").textContent = 0;
             }
         } else if (guess < secretNumber) {
             //When the input is to low
@@ -53,8 +53,22 @@ document.querySelector(".check").addEventListener("click",
                 document.querySelector(".message").textContent = "GAME OVER!";
                 document.querySelector("body").style.backgroundImage = "-webkit-linear-gradient(top, #ffc719 0%, #bf033b 100%)";
                 document.querySelector(".number").textContent = secretNumber;
-                document.querySelector(".score").textContent = "0";
+                document.querySelector(".score").textContent = 0;
             }
         }
+    }
+);
+
+document.querySelector(".again").addEventListener("click",
+    function () {
+        score = 10;
+        secretNumber = Math.trunc(Math.random() * 20) + 1;
+        document.querySelector(".message").textContent = "Start Guessing!";
+        document.querySelector(".score").textContent = score;
+        document.querySelector(".number").textContent = "?";
+        document.querySelector(".guess").value = "";
+        document.querySelector("body").style.backgroundImage = "-webkit-linear-gradient(top, #339cb9 0%,#3fa8c6 20%,#ff9ab2 100%)";
+        document.querySelector(".number").style.width = "15vw";
+        document.querySelector(".number").style.fontSize = "6rem";
     }
 );
