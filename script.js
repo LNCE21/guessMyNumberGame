@@ -14,26 +14,33 @@ document.querySelector(".check").addEventListener("click",
         //Get the value from the input, transform the string into a value and store in "guess" variable
         let guess = Number(document.querySelector(".guess").value);
 
-        //If the user does not input a value, display a message. The following only works if it is true. So, "guess" is 0 so its falsy value, but with the not operator, transforms to true.
+        //When the user does not input a value, display a message. The following only works if it is true. So, "guess" is 0 so its falsy value, but with the not operator, transforms to true.
         if (!guess) {
             document.querySelector(".message").textContent = "Enter a number!";
+            //When the user wins  
         } else if (guess === secretNumber) {
             document.querySelector(".message").textContent = "Correct number!";
+            //When the user enters an input out of the allowed range
         } else if (guess > 20 || guess < 1) {
             document.querySelector(".message").textContent = "Enter a number from 1 to 20";
+            //When the user inputs a valid number
         } else if (guess > secretNumber) {
+            //When the input is to high
             if (score > 1) {
                 document.querySelector(".message").textContent = "Too high";
                 score--;
                 document.querySelector(".score").textContent = score;
+                //When the user looses the game
             } else {
                 document.querySelector(".message").textContent = "GAME OVER!";
             }
         } else if (guess < secretNumber) {
+            //When the input is to low
             if (score > 1) {
                 document.querySelector(".message").textContent = "Too low";
                 score--;
                 document.querySelector(".score").textContent = score;
+                //When the user looses the game
             } else {
                 document.querySelector(".message").textContent = "GAME OVER!";
             }
