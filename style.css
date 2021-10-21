@@ -45,7 +45,7 @@ header {
   color: rgb(41, 38, 38);
   font-size: 6rem;
   width: 15rem;
-  padding: 3rem 0rem;
+  padding: 3rem 6rem;
   text-align: center;
   transform: scale(1);
   animation: pulse 2s infinite;
@@ -177,7 +177,7 @@ h1 {
     font-size: 6rem;
     height: 11rem;
     width: 11.5rem;
-    padding: 0 4rem 0 4.5rem;
+    padding: .5rem 9rem 0 9rem;
     text-align: center;
     transform: scale(1);
     animation: pulse 2s infinite;
@@ -224,7 +224,7 @@ h1 {
     font-size: 8rem;
     height: 13rem;
     width: 13.5rem;
-    padding: .5rem 4rem 0 4.5rem;
+    padding: .5rem 9rem 0 9rem;
     text-align: center;
     transform: scale(1);
     animation: pulse 2s infinite;
