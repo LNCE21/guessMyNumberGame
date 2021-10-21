@@ -6,7 +6,7 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 //This variable can also be called "state variable" because is part of the application state (all the data relevant for the application)
 let score = 10;
-
+let highscore = 0;
 
 //Event listener applied to check button element. We have to pass an argument with the type of event we are waiting and next, as a second argument, we need to write a function called "the event handler function" to specify the reaction when the event is listen:
 document.querySelector(".check").addEventListener("click",
@@ -24,6 +24,11 @@ document.querySelector(".check").addEventListener("click",
             document.querySelector("body").style.backgroundImage = "-webkit-radial-gradient(center, #3fa8c6 0%,#339cb9 25%, #0f3d6e 100%)";
             document.querySelector(".number").style.width = "20rem";
             document.querySelector(".number").style.fontSize = "8rem";
+
+            if (score > highscore) {
+                highscore = score;
+                document.querySelector(".highscore").textContent = highscore;
+            }
             //When the user enters an input out of the allowed range
         } else if (guess > 20 || guess < 1) {
             document.querySelector(".message").textContent = "Enter a number from 1 to 20";
