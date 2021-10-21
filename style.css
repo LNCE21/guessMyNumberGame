@@ -31,7 +31,7 @@ header {
 }
 
 .number {
-  width: 100vw;
+  width: 15vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -44,8 +44,7 @@ header {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: rgb(41, 38, 38);
   font-size: 6rem;
-  width: 15rem;
-  padding: 3rem 6rem;
+  padding: 4rem 6rem;
   text-align: center;
   transform: scale(1);
   animation: pulse 2s infinite;
@@ -53,7 +52,7 @@ header {
 
 @keyframes pulse {
 	0% {
-		transform: scale(0.95);
+		transform: scale(0.90);
 	}
 
 	70% {
@@ -61,7 +60,7 @@ header {
 	}
 
 	100% {
-		transform: scale(0.95);
+		transform: scale(0.90);
 	}
 }
 
