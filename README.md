@@ -10,7 +10,7 @@ Be careful, the score starts at 10 by default, but decreases by one with every t
 Highscore instead, stands for the best score made through the different matches, that's why when we want to start again, we press "Again!" but it does not reset the "Highscore" record. That way you can keep track of your best score.
 </p>
 <h3 text-align="center"> Demo of how it works<h3>
-<p text-align="center">
+<p align="center">
 <br>
-.<a href="https://lnce21.github.io/guessMyNumberGame/" target="_blank"> <img src="img/guessMyNumberGif.gif" width="358" height="639" alt="Game Demo"/></a>
+<a href="https://lnce21.github.io/guessMyNumberGame/" target="_blank"> <img src="img/guessMyNumberGif.gif" width="358" height="639" alt="Game Demo"/></a>
 </p>
