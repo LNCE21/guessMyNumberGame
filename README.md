@@ -1,6 +1,6 @@
-# Guess My Number 
-### Started this game to practice DOM manipulation
-
+<h1 align="center">Guess My Number  </h1>
+<h3 align="center">Started this game to practice DOM manipulation </h3>
+<br>
 <p align="center">This game is called "Guess My Number". 
 <br>
 The goal of the game is to guess a secret number between 1 and 20. We can type a number, and check if we were right. If the number was incorrect, we will see a hint to the next guess, if it was to high, to low, etc. 
