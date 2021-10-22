@@ -12,5 +12,5 @@ Highscore instead, stands for the best score made through the different matches,
 <h3 text-align="center"> Demo of how it works<h3>
 <p text-align="center">
 <br>
-<a href="https://lnce21.github.io/guessMyNumberGame/" target="_blank"> <img src="img/guessMyNumberGif.gif" width="358" height="639" alt="Game Demo"/></a>
+<div>.</div><a href="https://lnce21.github.io/guessMyNumberGame/" target="_blank"> <img src="img/guessMyNumberGif.gif" width="358" height="639" alt="Game Demo"/></a>
 </p>
