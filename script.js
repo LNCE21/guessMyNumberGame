@@ -32,25 +32,11 @@ document.querySelector(".check").addEventListener("click",
             //When the user enters an input out of the allowed range
         } else if (guess > 20 || guess < 1) {
             document.querySelector(".message").textContent = "Between 1 and 20";
-
-            //When the user inputs a valid number
-        } else if (guess > secretNumber) {
-            //When the input is to high
+            //When the user inputs a valid number but the guess is wrong
+        } else if (guess !== secretNumber) {
+            //When the input is to high or low
             if (score > 1) {
-                document.querySelector(".message").textContent = "Too high";
-                score--;
-                document.querySelector(".score").textContent = score;
-            } else {
-                //When the user looses the game
-                document.querySelector(".message").textContent = "GAME OVER!";
-                document.querySelector("body").style.backgroundImage = "-webkit-linear-gradient(top, #ffc719 0%, #bf033b 100%)";
-                document.querySelector(".number").textContent = secretNumber;
-                document.querySelector(".score").textContent = 0;
-            }
-        } else if (guess < secretNumber) {
-            //When the input is to low
-            if (score > 1) {
-                document.querySelector(".message").textContent = "Too low";
+                document.querySelector(".message").textContent = guess > secretNumber ? "Too high" : "Too low";
                 score--;
                 document.querySelector(".score").textContent = score;
             } else {
