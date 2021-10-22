@@ -15,5 +15,5 @@ Click the demo preview and it will take you to the game!
 <br>
 <br>
 <br>
-<a href="https://lnce21.github.io/guessMyNumberGame/" target="_blank"> <img src="img/guessMyNumberGif.gif" width="358" height="639" alt="Game Demo"/></a>
+<a href="https://lnce21.github.io/guessMyNumberGame/" target="_blank"> <img src="img/guessMyNumberGif.gif" width="1104" height="955" alt="Game Demo"/></a>
 </>
