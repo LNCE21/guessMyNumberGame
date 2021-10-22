@@ -31,7 +31,7 @@ document.querySelector(".check").addEventListener("click",
             }
             //When the user enters an input out of the allowed range
         } else if (guess > 20 || guess < 1) {
-            document.querySelector(".message").textContent = "Enter a number from 1 to 20";
+            document.querySelector(".message").textContent = "Between 1 and 20";
 
             //When the user inputs a valid number
         } else if (guess > secretNumber) {
